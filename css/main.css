@@ -3,7 +3,7 @@
    ========================================================================== */
 
    html {
-   	background: url("../img/bg.png") repeat;
+      background: url("../img/bg.png") repeat;
    }
   
    h1 {
@@ -20,11 +20,11 @@
    }
 
    #map { 
-   	bottom:0;
+      bottom:0;
       left:0;
       position:absolute; 
       right:0;
-   	top: 48px;  
+      top: 48px;  
       z-index: -100;
    }
 
@@ -232,7 +232,7 @@
    @media (max-width: 480px) {
 
       html {
-         background: #000;
+         background: #24A6E8;
       }
 
       #map {
@@ -252,7 +252,7 @@
          overflow: inherit;
          right:20px;
          top: 600px;
-         width: auto;
+         width: 100%;
       }
       
       .fui-menu-24 {
@@ -284,6 +284,27 @@
          height: 0;
          overflow: hidden;
       }
+
+      .navbar .btn {
+         -moz-border-bottom-colors: none;
+           -moz-border-left-colors: none;
+          -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+         background-color: #000;
+         background-image: none;
+         background-repeat: repeat-x;
+         border-color: #000;
+         border-image: none;
+         border-radius: 0;
+         border-width: 0;
+         box-shadow: 0;
+         cursor: pointer;
+         padding: 0;
+         position: absolute;
+         right: 6px;
+         top: -5px;
+      }
+
    }
 
 /* ==========================================================================
