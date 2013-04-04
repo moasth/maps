@@ -56,6 +56,7 @@
    .sidebox .nav-pills > li {
       text-align: center;
       width: 33.33%;
+      box-sizing: border-box;
    }
 
    .sidebox .nav-pills > li > a {
@@ -190,30 +191,8 @@
            -o-font-smoothing: antialiased;
    }
 
-   .fui-menu-24{
+   .menu {
       display: none;
-   } 
-
-   .flat:before {
-      font-family: 'Flat-UI-Icons-24';
-      color: #fff;
-   }
-
-   .fui-menu-24:before {
-      cursor: pointer;
-      content: "\e006"; 
-      font-size: 24px;
-      float: right;
-      line-height: 1;
-      margin-top: 12px;
-      margin-right: 15px;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      -webkit-font-smoothing: antialiased; 
-         -moz-font-smoothing: antialiased;
-          -ms-font-smoothing: antialiased;
-           -o-font-smoothing: antialiased;
    }
 
 /* ==========================================================================
@@ -255,7 +234,7 @@
          width: 100%;
       }
       
-      .fui-menu-24 {
+      .menu {
          display: block;
       } 
 
@@ -302,7 +281,7 @@
          padding: 0;
          position: absolute;
          right: 6px;
-         top: -5px;
+         top: -6px;
       }
 
    }
@@ -323,11 +302,6 @@
          src: url('fonts/BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
       }
 
-      @font-face {
-         font-family: "Flat-UI-Icons-24";
-         src: url("fonts/Flat-UI-Icons-24.svg#Flat-UI-Icons-24") format("svg");
-      }
-
    }
 
    @font-face {
@@ -341,23 +315,6 @@
       font-style: normal;
    }
 
-   [data-icon]:before {
-      content: attr(data-icon);
-      display: block;
-      font-family: 'icomoon';
-      font-size: 4em;
-      font-variant: normal;
-      font-weight: normal;
-      line-height: 1;
-      margin: -26px 15px -26px 10px;
-      speak: none;
-      text-transform: none;
-      -webkit-font-smoothing: antialiased;
-         -moz-font-smoothing: antialiased;
-          -ms-font-smoothing: antialiased;
-           -o-font-smoothing: antialiased;
-   }
-
    @font-face {
       font-family: 'BLOKKNeue-Regular';
       src: url('fonts/BLOKKNeue-Regular.eot');
@@ -369,19 +326,62 @@
       font-style: normal;
    }
 
-   @font-face {
-      font-family: "Flat-UI-Icons-24";
-      src: url("fonts/Flat-UI-Icons-24.eot");
-      src: url("fonts/Flat-UI-Icons-24.eot?#iefix") format("embedded-opentype"), 
-           url("fonts/Flat-UI-Icons-24.woff") format("woff"), 
-           url("fonts/Flat-UI-Icons-24.ttf") format("truetype"), 
-           url("fonts/Flat-UI-Icons-24.svg#Flat-UI-Icons-24") format("svg");
+   [data-icon]:before {
+      content: attr(data-icon);
+      display: block;
+      font-family: 'icomoon';
+      color: #FFFFFF;
+      font-variant: normal;
       font-weight: normal;
-      font-style: normal; 
+      line-height: 1;
+      speak: none;
+      text-transform: none;
+      -webkit-font-smoothing: antialiased;
+         -moz-font-smoothing: antialiased;
+          -ms-font-smoothing: antialiased;
+           -o-font-smoothing: antialiased;
    }
 
-   .flat-icons {
+   .brand:before{
+      font-size: 4em;
+      margin: -26px 15px -26px 10px;
+   }
+
+   .menu:before{
       font-size: 24px;
-      margin-bottom: 38px;
-      position: relative; 
+      float: right;
+      line-height: 1;
+      margin-top: 12px;
+      margin-right: 15px;
+   }
+
+   .icon-logo, .icon-twitter, .icon-mail, .icon-twitter-2, .icon-menu {
+      color: #FFFFFF;
+      font-family: 'icomoon';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased; 
+         -moz-font-smoothing: antialiased;
+          -ms-font-smoothing: antialiased;
+           -o-font-smoothing: antialiased;
+   }
+
+   .icon-twitter:before {
+      content: "\e003";
+   }
+
+   .icon-mail:before {
+      content: "\e005";
+   }
+
+   .icon-twitter-2:before {
+      content: "\e006";
+   }
+
+   .icon-menu:before {
+      content: "\e001";
    }
