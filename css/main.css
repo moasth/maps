@@ -28,6 +28,10 @@
       z-index: -100;
    }
 
+   #contact-content, #about-content{
+      display: none;
+   }
+
    .zoomer{
       opacity: 0.8;
    }
@@ -178,7 +182,7 @@
    }
 
    .content, .content h1 {
-      font-family: 'BLOKKNeue-Regular' !important;
+      /*font-family: 'BLOKKNeue-Regular' !important;*/
       speak: none;
       font-style: normal;
       font-weight: normal;
@@ -225,7 +229,7 @@
       }
 
       .sidebox {
-         height: 600px;
+         /*height: 600px;*/
          left:0;
          opacity: 1;
          overflow: inherit;
