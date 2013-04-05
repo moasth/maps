@@ -41,7 +41,7 @@
    }
 
    .zoomin{
-      left: 41px !important;
+      left: 40px !important;
    }
 
    .sidebox{
@@ -65,16 +65,22 @@
 
    .sidebox .nav-pills > li > a {
       background-color: #FFF;
-      border: 1px solid #24A6E8;
-      margin: 0 -1px 0 0;
+      /*border: 1px solid #24A6E8;*/
+      border-right: 1px solid #24A6E8;
+      /*margin: 0 -1px 0 0;*/
       padding: 15px 0 15px 0;
       -webkit-border-radius: 0;
          -moz-border-radius: 0;
               border-radius: 0;
    }
 
-   .sidebox .nav-pills .last a{
-      margin-right: 0;
+   .sidebox ul {
+       border: 1px solid #24A6E8;
+       background-color: #FFF;
+   }
+
+   .sidebox .nav-pills > .last > a{
+      border-right: none;
    }
 
    .sidebox .nav-pills > .active > a,
@@ -104,6 +110,24 @@
       border: 1px solid #24A6E8;
    }
 
+   .content, .content h1 {
+      font-family: 'BLOKKNeue-Regular' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+         -moz-font-smoothing: antialiased;
+          -ms-font-smoothing: antialiased;
+           -o-font-smoothing: antialiased;
+   }
+
+   .menu {
+      display: none;
+   }
+
 /* ==========================================================================
    Bootstrap overrides... 
    ========================================================================== */
@@ -116,9 +140,13 @@
       margin-bottom: 0px;
    }
 
-   .nav-pills > li > a {
+   .navbar .nav-pills > li > a {
       margin-top: 2px;
-      margin-bottom: 2px;
+   }
+
+   .nav-pills > li > a {
+      margin-top: 0;
+      margin-bottom: 0;
       padding-top: 8px;
       padding-bottom: 8px;
       -webkit-border-radius: 5px;
@@ -179,24 +207,6 @@
    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
       padding-left: 6px;
       padding-right: 6px;
-   }
-
-   .content, .content h1 {
-      font-family: 'BLOKKNeue-Regular' !important;
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      -webkit-font-smoothing: antialiased;
-         -moz-font-smoothing: antialiased;
-          -ms-font-smoothing: antialiased;
-           -o-font-smoothing: antialiased;
-   }
-
-   .menu {
-      display: none;
    }
 
 /* ==========================================================================
@@ -285,6 +295,7 @@
          padding: 0;
          position: absolute;
          right: 6px;
+         text-shadow: none;
          top: -6px;
       }
 
