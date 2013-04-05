@@ -182,7 +182,7 @@
    }
 
    .content, .content h1 {
-      /*font-family: 'BLOKKNeue-Regular' !important;*/
+      font-family: 'BLOKKNeue-Regular' !important;
       speak: none;
       font-style: normal;
       font-weight: normal;
