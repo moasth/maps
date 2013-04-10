@@ -7,7 +7,7 @@ $(document).ready(function(){
 		map.disableLayerAt(1);
 		//map.ui.hash.add();
 
-		map.setZoomRange(5, 15);
+		map.setZoomRange(5, 14);
 		map.setPanLimits([{
 			lat: 35.3073,
 			lon: -19.6518
