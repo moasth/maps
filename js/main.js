@@ -6,7 +6,7 @@ $(document).ready(function(){
 		//var layers = document.getElementById('map-ui');
 		map.disableLayerAt(1);
 		//map.ui.hash.add();
-
+		map.interaction.auto().off('on').off('off').on(wax.movetip().parent(map.parent).events());
 		map.setZoomRange(6, 15);
 		map.setPanLimits([{
 			lat: 35.3073,
