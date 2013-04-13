@@ -15,6 +15,9 @@ $(document).ready(function(){
 			lat: 59.5726,
 			lon: 34.0933
 		}]);
+
+
+		$('.zoomer').wrapAll('<div class="zoom" />');
 	});
 
 	$('.nav-pills a').on("click", function(e) {
