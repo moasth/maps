@@ -6,7 +6,16 @@ $(document).ready(function(){
 		//var layers = document.getElementById('map-ui');
 		map.disableLayerAt(1);
 		//map.ui.hash.add();
-		map.interaction.auto().off('on').off('off').on(wax.movetip().parent(map.parent).events());
+		//map.interaction.auto().off('on').off('off').on(wax.movetip().parent(map.parent).events());
+		map.interaction.auto();
+    	map.interaction.off('on');
+    	map.interaction.off('off');
+    	map.interaction.on({
+        	on: function(o) {
+            	$(".content > h1").html(o.data.name);
+        	}
+    	});
+
 		map.setZoomRange(6, 15);
 		map.setPanLimits([{
 			lat: 35.3073,
@@ -16,6 +25,9 @@ $(document).ready(function(){
 			lon: 34.0933
 		}]);
 
+ 		// Attribute map
+    	map.ui.attribution.add()
+        .content('<a href="http://mapbox.com/about/maps">Terms &amp; Feedback</a>');
 
 		$('.zoomer').wrapAll('<div class="zoom" />');
 	});
