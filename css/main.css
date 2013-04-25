@@ -247,10 +247,17 @@
          background: #24A6E8;
       }
 
+      #pane{
+         position: absolute;
+         right: 20px;
+         width: auto;
+      }
+
       #map {
          height: 600px;
-         right: 20px;
+         left: 0;
          min-width: 256px;
+         width: 100%;
       }
 
       .zoomer {
